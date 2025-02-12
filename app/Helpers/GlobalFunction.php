@@ -220,7 +220,6 @@ function salam($text)
     return $text;
 }
 
-
 function addZero($number, int $length = 3)
 {
     return str_pad($number, $length, '0', STR_PAD_LEFT);
@@ -249,13 +248,45 @@ function autonumber($id_terakhir, $panjang_kode, $panjang_angka)
     return $id_baru;
 }
 
+function formatDateInIndonesian($date, $type) {
+    // Array untuk mengganti nama hari dalam bahasa Inggris dengan bahasa Indonesia
+    $days_in_indonesian = [
+        'Monday'    => 'Senin',
+        'Tuesday'   => 'Selasa',
+        'Wednesday' => 'Rabu',
+        'Thursday'  => 'Kamis',
+        'Friday'    => 'Jumat',
+        'Saturday'  => 'Sabtu',
+        'Sunday'    => 'Minggu'
+    ];
+
+    // Mendapatkan nama hari dalam bahasa Inggris
+    $day_name = $days_in_indonesian[date("l", strtotime($date))];
+
+    // Menyusun tanggal dengan format: Hari, dd bulan yyyy
+    if ($type == 'full') {
+      return $day_name . ", " . date("d F Y", strtotime($date));
+    }
+    else if ($type == 'day') {
+      return $day_name;
+    }
+    else if ($type == 'date') {
+      return date("d", strtotime($date));
+    }
+    else if ($type == 'month') {
+      return date("F", strtotime($date));
+    }
+    else if ($type == 'year') {
+      return date("Y", strtotime($date));
+    }
+}
+
 function permissionOfAccess(string $access_name): array
 {
     $data = collect(config('access_permission.permissions'));
     $data = $data->pluck($access_name)->filter(fn ($value, $key) => gettype($value) == 'array');
     return array_merge(...$data->toArray());
 }
-
 
 function getDescriptionFromPermission(string $permission_name): ?string
 {
@@ -268,7 +299,6 @@ function getDescriptionFromPermission(string $permission_name): ?string
     }
     return null;
 }
-
 
 function listAccess(): array
 {

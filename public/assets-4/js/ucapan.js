@@ -281,22 +281,6 @@ const renderCard = (data) => {
 const ucapan = async () => {
     const UCAPAN = document.getElementById('daftarucapan');
     UCAPAN.innerHTML = `<div class="text-center"><span class="spinner-border spinner-border-sm me-1"></span>Loading...</div>`;
-    // let token = localStorage.getItem('token') ?? '';
-
-    // if (token.length == 0) {
-    //     alert('Terdapat kesalahan, token kosong !');
-    //     window.location.reload();
-    //     return;
-    // }
-
-    // const REQ = {
-    //     method: 'GET',
-    //     headers: {
-    //         'Accept': 'application/json',
-    //         'Content-Type': 'application/json',
-    //         'Authorization': 'Bearer ' + token
-    //     }
-    // };
 
     const REQ = '';
 
