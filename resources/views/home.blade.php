@@ -125,6 +125,36 @@
                                             'url' => 'temp/template-wedding-7',
                                             'img' => 'app-assets/images/illustration/personalization.svg',
                                             'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
+                                        ],
+                                        [
+                                            'title' => 'Template weddings Invitation 8',
+                                            'url' => 'temp/template-wedding-8',
+                                            'img' => 'app-assets/images/illustration/personalization.svg',
+                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
+                                        ],
+                                        [
+                                            'title' => 'Template weddings Invitation 9',
+                                            'url' => 'temp/template-wedding-9',
+                                            'img' => 'app-assets/images/illustration/personalization.svg',
+                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
+                                        ],
+                                        [
+                                            'title' => 'Template weddings Invitation 10',
+                                            'url' => 'temp/template-wedding-10',
+                                            'img' => 'app-assets/images/illustration/personalization.svg',
+                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
+                                        ],
+                                        [
+                                            'title' => 'Template weddings Invitation 11',
+                                            'url' => 'temp/template-wedding-11',
+                                            'img' => 'app-assets/images/illustration/personalization.svg',
+                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
+                                        ],
+                                        [
+                                            'title' => 'Template weddings Invitation 12',
+                                            'url' => 'temp/template-wedding-12',
+                                            'img' => 'app-assets/images/illustration/personalization.svg',
+                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
                                         ]
                                     ];
                                 @endphp

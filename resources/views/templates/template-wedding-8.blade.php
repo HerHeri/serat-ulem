@@ -8,7 +8,7 @@
     <meta name="keywords" content="jasa undangan digital, undangan pernikahan online, undangan digital kreatif, undangan ulang tahun digital, undangan online, undangan ramah lingkungan, buat undangan digital, undangan digital elegan, jasa desain undangan digital, undangan acara spesial">
     <meta name="author" content="Made Heri">
     <link rel="apple-touch-icon" href="{{ url('/') }}/assets-lp/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="./app-lpssets/images/ico/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('/') }}/app-assets/images/ico/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +25,7 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ url('/') }}/assets-lp/style-template.css" />
+    <link rel="stylesheet" href="{{ url('/') }}/assets-lp/style-template-2.css" />
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="{{ url('/') }}/assets-lp/lightbox2/dist/css/lightbox.min.css" />
     <style>
@@ -56,7 +56,7 @@
         align-items: center;
         font-size: 6rem;
         font-family: "Ephesis", cursive;
-        color: var(--hijau);
+        color: var(--inv-accent);
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -67,8 +67,60 @@
       .eyesome-script {
         font-family: "Eyesome Script", cursive;
         font-size: 3rem;
-        color: var(--hijau);
+        color: var(--inv-accent);
         text-shadow: var(--shadow);
+      }
+
+      /* Animasi untuk gambar bagian bawah (gerak kiri-kanan) */
+      @keyframes moveLeftRight {
+          0% { transform: rotate(-2deg); }
+          50% { transform: rotate(2deg); }
+          100% { transform: rotate(-2deg); }
+      }
+
+      /* Animasi untuk gambar bagian atas (gerak atas-bawah) */
+      @keyframes moveUpDown {
+          0% { transform: rotate(-2deg); }
+          50% { transform: rotate(2deg); }
+          100% { transform: rotate(-2deg); }
+      }
+
+      /* Animasi untuk gambar bagian bawah (gerak kanan-kiri) */
+      @keyframes moveRightLeft {
+          0% { transform: rotate(2deg); }
+          50% { transform: rotate(-2deg); }
+          100% { transform: rotate(2deg); }
+      }
+
+      /* Animasi untuk gambar bagian atas (gerak bawah-atas) */
+      @keyframes moveDownUp {
+          0% { transform: rotate(2deg); }
+          50% { transform: rotate(-2deg); }
+          100% { transform: rotate(2deg); }
+      }
+
+      /* Gambar bagian atas kiri */
+      .top-0.start-0 {
+          animation: moveUpDown 4s ease-in-out infinite;
+      }
+
+      /* Gambar bagian atas kanan */
+      .top-0.end-0 {
+          animation: moveDownUp 4s ease-in-out infinite;
+      }
+
+      /* Gambar bagian bawah kiri */
+      .bottom-0.start-0 {
+          animation: moveLeftRight 4s ease-in-out infinite;
+          bottom: -18px !important;
+          left: -5px !important;
+      }
+
+      /* Gambar bagian bawah kanan */
+      .bottom-0.end-0 {
+          animation: moveRightLeft 4s ease-in-out infinite;
+          bottom: -18px !important;
+          right: -5px !important;
       }
     </style>
   </head>
@@ -76,40 +128,40 @@
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white" style="width: 414px !important;" >
       <div class="frame">
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tr.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px; bottom: -18px !important; left: -5px !important;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px; bottom: -18px !important; right: -5px !important;"
         />
       </div>
       <main
@@ -159,89 +211,53 @@
         <p style="font-size: medium; position: relative; top: 20px;">Kepada Yth. Bapak/Ibu/Saudara/i</p>
         <div class="mt-5" style="color: black;">Nama Tamu</div>
         <!-- <div class="simply-countdown"></div> -->
-        <a href="#home" class="btn btn-lg mt-2" style="position: relative; top: 50px;" onClick="enablescroll()">Lihat Undangan</a>
+        <a href="javascript:void(0)" class="btn btn-lg mt-2" style="position: relative; top: 50px;" onClick="enablescroll()">Lihat Undangan</a>
       </main>
     </section>
-
-    <!-- {{-- <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar" style="width: 414px !important;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Wedding</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav align-items-center ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#info">Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#family">Family</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gifts">Gifts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> --}} -->
     <section id="home" class="home" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px; bottom: -18px !important; left: -5px !important;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tr.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px; bottom: -18px !important; right: -5px !important;"
         />
       </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-11 text-center mt-0">
             <h5 class="eyesome-script" style="font-size: 30px;" data-aos="fade-right" data-aos-duration="2000">Save The Date</h5>
-            <div class="mb-4 mx-auto d-flex flex-column justify-content-center animate__animated animate__zoomIn animate__slower image-editable" style="width: 80%; overflow: hidden; aspect-ratio: 1 / 1; background-image: url('./assets-lp/img-template/frame-emp.webp'); background-size: 100%;">
+            <div class="mb-4 mx-auto d-flex flex-column justify-content-center animate__animated animate__zoomIn animate__slower image-editable" style="width: 80%; overflow: hidden; aspect-ratio: 1 / 1; background-image: url('/assets-lp/img-template/temp2/frame-mempelai.webp'); background-size: 100%; background-repeat: no-repeat;">
               <div class="mx-auto image-editable" style="width: 180px; height: 180px;">
                 <img src="{{ url('/') }}/assets-lp/img-template/pasangan.webp" alt="Pasangan" class="w-100 h-100">
               </div>
@@ -262,40 +278,40 @@
     <section id="pengantin" class="home" style="width: 414px !important; padding-top: 100px; padding-bottom: 10px;">
       <div class="frame">
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tr.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px; bottom: -18px !important; left: -5px !important;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px; bottom: -18px !important; right: -5px !important;"
         />
       </div>
       <div class="container">
@@ -310,7 +326,7 @@
             </div>
             <div class="col-12" data-aos="fade-right" data-aos-duration="2000">
               <div class="animate__animated animate__zoomIn animate__slower" style="position: relative;">
-                <div style="position: absolute; width: 100%; left: 0px; right: 0px; bottom: -19px; height: 74px; background-image: url('./assets-lp/img-template/photo-frame.webp'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
+                <div style="position: absolute; width: 100%; left: 0px; right: 0px; bottom: -19px; height: 74px; background-image: url('/assets-lp/img-template/photo-frame.webp'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
                 <div class="image-editable" style="height: 120px; width: 120px; margin: auto auto 20px; border-radius: 100%; overflow: hidden;">
                   <img src="https://assets.satumomen.com/assets/pengantin-wanita-ilustrasi-1688039849.jpg" alt="pengantin-wanita-ilustrasi-1688039849.jpg" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
@@ -323,7 +339,7 @@
             </div>
             <div class="col-12" data-aos="fade-left" data-aos-duration="2000">
               <div class="animate__animated animate__zoomIn animate__slower" style="position: relative;">
-                <div style="position: absolute; width: 100%; left: 0px; right: 0px; bottom: -19px; height: 74px; background-image: url('./assets-lp/img-template/photo-frame.webp'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
+                <div style="position: absolute; width: 100%; left: 0px; right: 0px; bottom: -19px; height: 74px; background-image: url('/assets-lp/img-template/photo-frame.webp'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
                 <div class="image-editable" style="height: 120px; width: 120px; margin: auto auto 20px; border-radius: 100%; overflow: hidden;">
                   <img src="https://assets.satumomen.com/assets/pengantin-pria-ilustrasi-1688039880.jpg" alt="pengantin-pria-ilustrasi-1688039880.jpg" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
@@ -339,40 +355,40 @@
     <section id="info" class="info" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px; bottom: -18px !important; left: -5px !important;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tr.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px; bottom: -18px !important; right: -5px !important;"
         />
       </div>
       <div class="container">
@@ -523,18 +539,42 @@
 
     <section class="gallery" id="gallery" style="width: 414px !important;">
         <div class="frame">
-            <img src="{{ url('/') }}/assets-lp/img-template/frame-tl.png" alt=""
-                class="position-absolute top-0 start-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
-                data-aos-easing="ease-in-out" style="width: 200px;" />
-            <img src="{{ url('/') }}/assets-lp/img-template/frame-tr.png" alt=""
-                class="position-absolute top-0 end-0" data-aos="zoom-out" data-aos-duration="2000"
-                data-aos-easing="ease-in-out" style="width: 200px;" />
-            <img src="{{ url('/') }}/assets-lp/img-template/frame-bl.png" alt=""
-                class="position-absolute bottom-0 start-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
-                data-aos-easing="ease-in-out" style="width: 200px;" />
-            <img src="{{ url('/') }}/assets-lp/img-template/frame-br.png" alt=""
-                class="position-absolute bottom-0 end-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
-                data-aos-easing="ease-in-out" style="width: 200px;" />
+          <img
+            src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
+            alt=""
+            class="position-absolute top-0 start-0"
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            style="width: 170px;"
+          />
+          <img
+            src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
+            alt=""
+            class="position-absolute top-0 end-0"
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            style="width: 170px;"
+          />
+          <img
+            src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
+            alt=""
+            class="position-absolute bottom-0 start-0"
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            style="width: 170px; bottom: -18px !important; left: -5px !important;"
+          />
+          <img
+            src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
+            alt=""
+            class="position-absolute bottom-0 end-0"
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            style="width: 170px; bottom: -18px !important; right: -5px !important;"
+          />
         </div>
         <div class="container">
             <div class="row justify-content-center">
@@ -600,40 +640,40 @@
     <section id="lokasi" class="gifts" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
           alt=""
-          class="position-absolute top-0 start-0 m-0"
+          class="position-absolute top-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
           alt=""
-          class="position-absolute top-0 end-0 m-0"
+          class="position-absolute top-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
           alt=""
-          class="position-absolute bottom-0 start-0 m-0"
+          class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px; bottom: -18px !important; left: -5px !important;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tr.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
           alt=""
-          class="position-absolute bottom-0 end-0 m-0"
+          class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px; transform: scaleY(-1);"
+          style="width: 170px; bottom: -18px !important; right: -5px !important;"
         />
       </div>
       <div class="container">
@@ -672,40 +712,40 @@
     <section id="gifts" class="gifts" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tl.webp"
           alt=""
           class="position-absolute top-0 start-0 m-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-tr.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/bl.webp"
           alt=""
           class="position-absolute bottom-0 start-0 m-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 160px;"
         />
         <img
-          src="{{ url('/') }}/assets-lp/img-template/frame-br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp2/br.webp"
           alt=""
           class="position-absolute bottom-0 end-0 m-0"
           data-aos="zoom-out"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          style="width: 200px;"
+          style="width: 170px;"
         />
       </div>
       <div class="container">
@@ -826,11 +866,12 @@
       }
 
       function enablescroll() {
-        window.onscroll = function () {};
-        rootElement.style.scrollBehavior = "smooth";
+        document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+        document.documentElement.style.scrollBehavior = "smooth";
         // localStorage.setItem("opened", "true");
-        // playAudio();
+        playAudio();
       }
+
       function playAudio() {
         song.volume = 0.3;
         audioIconWrapper.style.display = "flex";
@@ -855,24 +896,24 @@
       //   if (!localStorage.getItem("opened")) {
       //     disableScroll();
       //   }
-      disableScroll();
+    //   disableScroll();
     </script>
 
     <script>
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            alert("Konfirmasi Kehadiran Berhasil Terkirim!");
-          });
-        });
-      });
+    //   window.addEventListener("load", function () {
+    //     const form = document.getElementById("my-form");
+    //     form.addEventListener("submit", function (e) {
+    //       e.preventDefault();
+    //       const data = new FormData(form);
+    //       const action = e.target.action;
+    //       fetch(action, {
+    //         method: "POST",
+    //         body: data,
+    //       }).then(() => {
+    //         alert("Konfirmasi Kehadiran Berhasil Terkirim!");
+    //       });
+    //     });
+    //   });
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -20,7 +20,7 @@ function dateCount(dttime){
     document.getElementById("detik").innerHTML = seconds;
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("Carasingkat").innerHTML = "EXPIRED";
+    //   document.getElementById("Carasingkat").innerHTML = "EXPIRED";
     }
   }, 1000);
 }
