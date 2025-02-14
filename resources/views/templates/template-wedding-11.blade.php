@@ -7,7 +7,7 @@
     <meta name="description" content="Jasa undangan digital profesional untuk berbagai acara, termasuk pernikahan, ulang tahun, dan acara lainnya. Mudah digunakan, desain elegan, dan hemat biaya.">
     <meta name="keywords" content="jasa undangan digital, undangan pernikahan online, undangan digital kreatif, undangan ulang tahun digital, undangan online, undangan ramah lingkungan, buat undangan digital, undangan digital elegan, jasa desain undangan digital, undangan acara spesial">
     <meta name="author" content="Made Heri">
-    <link rel="apple-touch-icon" href="./assets-lp/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" href="{{ url('/') }}/assets-lp/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="./app-lpssets/images/ico/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Ephesis&display=swap" rel="stylesheet"/>
 
     <!-- Simply CountDown -->
-    <link rel="stylesheet" href="./assets-lp/Countdown/simplyCountdown.theme.default.css" />
-    <script src="./assets-lp/Countdown/simplyCountdown.min.js"></script>
+    <link rel="stylesheet" href="{{ url('/') }}/assets-lp/Countdown/simplyCountdown.theme.default.css" />
+    <script src="{{ url('/') }}/assets-lp/Countdown/simplyCountdown.min.js"></script>
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -25,18 +25,18 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets-lp/style-template-4.css" />
+    <link rel="stylesheet" href="{{ url('/') }}/assets-lp/style-template-4.css" />
     <!-- Lightbox CSS -->
-    <link rel="stylesheet" href="./assets-lp/lightbox2/dist/css/lightbox.min.css" />
+    <link rel="stylesheet" href="{{ url('/') }}/assets-lp/lightbox2/dist/css/lightbox.min.css" />
     <style>
       @font-face{
         font-family: "Sunroll";
-        src: url("./assets-lp/fonts/Sunroll.ttf");
+        src: url("{{ url('/') }}/assets-lp/fonts/Sunroll.ttf");
       }
 
       @font-face{
         font-family: "Eyesome Script";
-        src: url("./assets-lp/fonts/Eyesome Script.otf");
+        src: url("{{ url('/') }}/assets-lp/fonts/Eyesome Script.otf");
       }
 
       section, footer {
@@ -114,14 +114,14 @@
       /* Gambar bagian bawah kiri */
       .bottom-0.start-0 {
           animation: moveLeftRight 4s ease-in-out infinite;
-          bottom: -28px !important; 
+          bottom: -28px !important;
           left: -17px !important;
       }
 
       /* Gambar bagian bawah kanan */
       .bottom-0.end-0 {
           animation: moveRightLeft 4s ease-in-out infinite;
-          bottom: -28px !important; 
+          bottom: -28px !important;
           right: -17px !important;
       }
     </style>
@@ -130,7 +130,7 @@
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white" style="width: 414px !important;" >
       <div class="frame">
         <img
-          src="./assets-lp/img-template/temp4/tl.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
@@ -139,7 +139,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/tr.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
@@ -148,7 +148,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
@@ -157,7 +157,7 @@
           style="width: 150px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/br.png"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
@@ -173,7 +173,7 @@
       >
         <!-- <h5 style="position: relative; top: -14px; font-size: 28px;" class="eyesome-script">The Wedding Of</h5> -->
         <div class="elmnt-image">
-          <img src="./assets-lp/img-template/temp4/gunungan.webp" title="Wedding" alt="Wedding" data-recalc-dims="1" style="width: 150px;" />
+          <img src="{{ url('/') }}/assets-lp/img-template/temp4/gunungan.webp" title="Wedding" alt="Wedding" data-recalc-dims="1" style="width: 150px;" />
           <!-- <span style="transform: translate(10px, -10px);">D</span>
           <span style="transform: translate(-10px, 10px);">R</span> -->
         </div>
@@ -219,7 +219,7 @@
     <section id="home" class="home" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="./assets-lp/img-template/temp4/tl.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
@@ -228,7 +228,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/tr.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
@@ -237,7 +237,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
@@ -246,7 +246,7 @@
           style="width: 150px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/br.png"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
@@ -259,18 +259,18 @@
         <div class="row justify-content-center">
           <div class="col-md-11 text-center mt-0">
             <h5 class="eyesome-script" style="font-size: 30px;" data-aos="fade-right" data-aos-duration="2000">Save The Date</h5>
-            <div class="mb-4 mx-auto d-flex flex-column justify-content-center animate__animated animate__zoomIn animate__slower image-editable" 
+            <div class="mb-4 mx-auto d-flex flex-column justify-content-center animate__animated animate__zoomIn animate__slower image-editable"
                 style="width: 80%; overflow: hidden; aspect-ratio: 1 / 1; position: relative;">
                 <!-- Gambar pasangan -->
-                <div class="mx-auto image-editable" 
+                <div class="mx-auto image-editable"
                     style="width: 180px; height: 180px; margin-top: -46px; position: relative; z-index: 1;">
-                    <img src="./assets-lp/img-template/pasangan.webp" alt="Pasangan" class="w-100 h-100" 
+                    <img src="{{ url('/') }}/assets-lp/img-template/pasangan.webp" alt="Pasangan" class="w-100 h-100"
                         style="width: 200px !important; height: 200px !important;">
                 </div>
 
                 <!-- Frame mempelai -->
-                <div class="frame-mempelai" 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('./assets-lp/img-template/temp4/frame-mempelai.png'); 
+                <div class="frame-mempelai"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('./assets-lp/img-template/temp4/frame-mempelai.png');
                             background-size: 100%; background-repeat: no-repeat; z-index: 2;">
                 </div>
             </div>
@@ -290,7 +290,7 @@
     <section id="pengantin" class="home" style="width: 414px !important; padding-top: 100px; padding-bottom: 10px;">
       <div class="frame">
         <img
-          src="./assets-lp/img-template/temp4/tl.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
@@ -299,7 +299,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/tr.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
@@ -308,7 +308,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
@@ -317,7 +317,7 @@
           style="width: 150px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/br.png"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
@@ -367,7 +367,7 @@
     <section id="info" class="info" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="./assets-lp/img-template/temp4/tl.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp"
           alt=""
           class="position-absolute top-0 start-0"
           data-aos="zoom-out"
@@ -376,7 +376,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/tr.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
@@ -385,7 +385,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png"
           alt=""
           class="position-absolute bottom-0 start-0"
           data-aos="zoom-out"
@@ -394,7 +394,7 @@
           style="width: 150px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/br.png"
           alt=""
           class="position-absolute bottom-0 end-0"
           data-aos="zoom-out"
@@ -551,16 +551,16 @@
 
     <section class="gallery" id="gallery" style="width: 414px !important;">
         <div class="frame">
-            <img src="./assets-lp/img-template/temp4/tl.webp" alt=""
+            <img src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp" alt=""
                 class="position-absolute top-0 start-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
                 data-aos-easing="ease-in-out" style="width: 150px;" />
-            <img src="./assets-lp/img-template/temp4/tr.webp" alt=""
+            <img src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp" alt=""
                 class="position-absolute top-0 end-0" data-aos="zoom-out" data-aos-duration="2000"
                 data-aos-easing="ease-in-out" style="width: 150px;" />
-            <img src="./assets-lp/img-template/temp4/bl.png" alt=""
+            <img src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png" alt=""
                 class="position-absolute bottom-0 start-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
                 data-aos-easing="ease-in-out" style="width: 150px;" />
-            <img src="./assets-lp/img-template/temp4/br.png" alt=""
+            <img src="{{ url('/') }}/assets-lp/img-template/temp4/br.png" alt=""
                 class="position-absolute bottom-0 end-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
                 data-aos-easing="ease-in-out" style="width: 150px;" />
         </div>
@@ -574,50 +574,50 @@
 
             <div class="row row-cols-lg-12 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center">
                 <div class="col mt-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/1.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/1.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/1.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/1.jpg"
                             alt="Ami Reza 1" class="img-fluid w-100 rounded" data-lightbox="gallery" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/2.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/2.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/2.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/2.jpg"
                             alt="Ami Reza 2" class="img-fluid w-100 rounded" data-lightbox="gallery" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/3.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/3.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/3.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/3.jpg"
                             alt="Ami Reza 3" class="img-fluid w-100 rounded" data-lightbox="gallery" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/4.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/4.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/4.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/4.jpg"
                             alt="Ami Reza 4" class="img-fluid w-100 rounded" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/5.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/5.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/5.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/5.jpg"
                             alt="Ami Reza 5" class="img-fluid w-100 rounded" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/6.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/6.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/6.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/6.jpg"
                             alt="Ami Reza 6" class="img-fluid w-100 rounded" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/9.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/9.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/9.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/9.jpg"
                             alt="Ami Reza 9" class="img-fluid w-100 rounded" />
                     </a>
                 </div>
                 <div class="col mt-4" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
-                    <a href="./assets-lp/img-template/mempelai/10.jpg" data-lightbox="gallery">
-                        <img src="./assets-lp/img-template/mempelai/thumbnail/10.jpg"
+                    <a href="{{ url('/') }}/assets-lp/img-template/mempelai/10.jpg" data-lightbox="gallery">
+                        <img src="{{ url('/') }}/assets-lp/img-template/mempelai/thumbnail/10.jpg"
                             alt="Ami Reza 10" class="img-fluid w-100 rounded" />
                     </a>
                 </div>
@@ -627,16 +627,16 @@
 
     <section id="lokasi" class="gifts" style="width: 414px !important;">
       <div class="frame">
-        <img src="./assets-lp/img-template/temp4/tl.webp" alt=""
+        <img src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp" alt=""
             class="position-absolute top-0 start-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
             data-aos-easing="ease-in-out" style="width: 150px;" />
-        <img src="./assets-lp/img-template/temp4/tr.webp" alt=""
+        <img src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp" alt=""
             class="position-absolute top-0 end-0" data-aos="zoom-out" data-aos-duration="2000"
             data-aos-easing="ease-in-out" style="width: 150px;" />
-        <img src="./assets-lp/img-template/temp4/bl.png" alt=""
+        <img src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png" alt=""
             class="position-absolute bottom-0 start-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
             data-aos-easing="ease-in-out" style="width: 150px;" />
-        <img src="./assets-lp/img-template/temp4/br.png" alt=""
+        <img src="{{ url('/') }}/assets-lp/img-template/temp4/br.png" alt=""
             class="position-absolute bottom-0 end-0 m-0" data-aos="zoom-out" data-aos-duration="2000"
             data-aos-easing="ease-in-out" style="width: 150px;" />
     </div>
@@ -676,7 +676,7 @@
     <section id="gifts" class="gifts" style="width: 414px !important;">
       <div class="frame">
         <img
-          src="./assets-lp/img-template/temp4/tl.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tl.webp"
           alt=""
           class="position-absolute top-0 start-0 m-0"
           data-aos="zoom-out"
@@ -685,7 +685,7 @@
           style="width: 150px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/tr.webp"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/tr.webp"
           alt=""
           class="position-absolute top-0 end-0"
           data-aos="zoom-out"
@@ -694,7 +694,7 @@
           style="width: 300px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/bl.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/bl.png"
           alt=""
           class="position-absolute bottom-0 start-0 m-0"
           data-aos="zoom-out"
@@ -703,7 +703,7 @@
           style="width: 150px;"
         />
         <img
-          src="./assets-lp/img-template/temp4/br.png"
+          src="{{ url('/') }}/assets-lp/img-template/temp4/br.png"
           alt=""
           class="position-absolute bottom-0 end-0 m-0"
           data-aos="zoom-out"
@@ -723,7 +723,7 @@
             </p>
             <div class="card text-center text-bg-light mb-5 p-2">
               <div class="card-header fw-bold" style="background: none;">
-                <img src="./assets-lp/img-bank/mandiri-logo.png" data-aos="zoom-in" data-aos-duration="2000" style="margin: 0;" />
+                <img src="{{ url('/') }}/assets-lp/img-bank/mandiri-logo.png" data-aos="zoom-in" data-aos-duration="2000" style="margin: 0;" />
               </div>
               <div class="card-body">
                 <div class="fw-bolds" data-aos="zoom-in-up" data-aos-duration="2000" >
@@ -736,7 +736,7 @@
             </div>
             <div class="card text-center text-bg-light mb-5 p-2">
               <div class="card-header fw-bold" style="background: none;">
-                <img src="./assets-lp/img-bank/Bank_Central_Asia.svg" data-aos="zoom-in" data-aos-duration="2000" style="margin: 0;" />
+                <img src="{{ url('/') }}/assets-lp/img-bank/Bank_Central_Asia.svg" data-aos="zoom-in" data-aos-duration="2000" style="margin: 0;" />
               </div>
               <div class="card-body">
                 <div class="fw-bolds" data-aos="zoom-in-up" data-aos-duration="2000" >
@@ -771,7 +771,7 @@
     <div id="audio-container">
       <audio id="song" autoplay loop>
         <source
-          src="./assets-lp/Audio/Afgan ft. Rossa - Kamu Yang Kutunggu (Lirik).mp3"
+          src="{{ url('/') }}/assets-lp/Audio/Afgan ft. Rossa - Kamu Yang Kutunggu (Lirik).mp3"
           type="audio/mp3"
         />
       </audio>
@@ -789,9 +789,9 @@
     <!-- jQuery CDN Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- Lightbox JS -->
-    <script src="./assets-lp/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="{{ url('/') }}/assets-lp/lightbox2/dist/js/lightbox.min.js"></script>
     <!-- Custom js -->
-    <script src="./assets-lp/script-template.js"></script>
+    <script src="{{ url('/') }}/assets-lp/script-template.js"></script>
 
     <script>
       // simplyCountdown(".simply-countdown", {
