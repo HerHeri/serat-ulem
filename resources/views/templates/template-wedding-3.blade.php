@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="The Wedding OF : Utsman & Yani">
     <meta property="og:description" content="Minggu, 30 Juli 2023">
-    <meta property="og:image" content="https://i.ibb.co/p2xrqXN/Utsman.png">
-    <meta property="og:url" content="https://masreyxlvi.github.io/Utsman-Yani/">
+    <meta property="og:image" content="{{ url('/app-assets/images/logo/logo.png') }}">
+    <meta property="og:url" content="https://serat-ulem.my.id">
     <meta property="og:type" content="website">
+    <meta name="description" content="Jasa undangan digital profesional untuk berbagai acara, termasuk pernikahan, ulang tahun, dan acara lainnya. Mudah digunakan, desain elegan, dan hemat biaya.">
+    <meta name="keywords" content="jasa undangan digital, undangan pernikahan online, undangan digital kreatif, undangan ulang tahun digital, undangan online, undangan ramah lingkungan, buat undangan digital, undangan digital elegan, jasa desain undangan digital, undangan acara spesial">
+    <meta name="author" content="Made Heri">
 
     <!-- my fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet" />

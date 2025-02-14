@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="The Wedding OF : {{ $du->nama_pengantin_pria }} & {{ $du->nama_pengantin_wanita }}">
     <meta property="og:description" content="{{ date('d F Y', strtotime($du->tanggal_resepsi)) }}">
-    <meta property="og:image" content="https://i.ibb.co/p2xrqXN/Utsman.png">
+    <meta property="og:image" content="{{ url('/app-assets/images/logo/logo.png') }}">
     <meta property="og:url" content="https://serat-ulem.my.id">
     <meta property="og:type" content="website">
 
@@ -29,6 +29,16 @@
     <link rel="stylesheet" href="{{ url('/') }}/assets-3/assets/sweetalert2/sweetalert2.min.css">
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     
@@ -57,7 +67,9 @@
     <!-- my Logo  -->
     <!-- Elemen logo -->
       <div id="logo">
-        <img src="{{ url('/') }}/assets-3/images/logo.png" alt="Logo" />
+        {{-- buatlah image bisa berputar --}}
+        <img src="{{ url('/play-button.png') }}" alt="Logo" style="width: 60px; height: auto; animation: spin 10s linear infinite; opacity: 0.6;" />
+        {{-- <img src="{{ url('/play-button.png') }}" alt="Logo" /> --}}
       </div>
     <!-- hero section start -->
     <section class="hero" id="home">
