@@ -6,6 +6,7 @@ use App\Http\Controllers\DataUcapanController;
 use App\Http\Controllers\DataUndanganController;
 use App\Http\Controllers\LandingpageController;
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\TemplateUndanganController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -42,8 +43,14 @@ Route::middleware(['auth'])->group(function () {
 
     Route::prefix('template-message')->group(function () {
         Route::get('/', [TemplateController::class, 'index'])->name('template-message');
-        Route::post('/store', [TemplateController::class, 'index'])->name('template-message.store');
+        Route::post('/store', [TemplateController::class, 'store'])->name('template-message.store');
         Route::any('/remove', [TemplateController::class, 'remove'])->name('template-message.remove');
+    });
+
+    Route::prefix('template-undangan')->group(function () {
+        Route::get('/', [TemplateUndanganController::class, 'index'])->name('template-undangan');
+        Route::post('/store', [TemplateUndanganController::class, 'store'])->name('template-undangan.store');
+        Route::any('/remove', [TemplateUndanganController::class, 'remove'])->name('template-undangan.remove');
     });
 
     Route::any('logout', [AuthController::class, 'logout'])->name('logout');

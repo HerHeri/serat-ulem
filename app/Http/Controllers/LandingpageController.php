@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\DetailUndangan;
+use App\Models\TemplateUndangan;
 use App\Models\Ucapan;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -12,7 +13,8 @@ class LandingpageController extends Controller
 {
     function index()
     {
-        return view('home');
+        $templateUndangan = TemplateUndangan::get();
+        return view('home', compact('templateUndangan'));
     }
 
     function showTemplate($slug)

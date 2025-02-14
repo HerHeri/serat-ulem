@@ -82,92 +82,15 @@
                         <section id="knowledge-base-content" style="padding-top: 67px;">
                             <div class="row kb-search-content-info match-height justify-content-center">
                                 <!-- sales card -->
-                                @php
-                                    $arrTemplate = [
-                                        [
-                                            'title' => 'Template Wedding Invitation 1',
-                                            'url' => 'temp/template-wedding-1',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Undangan pernikahan dengan desain elegan dan minimalis, cocok untuk pernikahan modern. Gunakan template ini untuk memberikan kesan mewah dan bersih pada undangan Anda.'
-                                        ],
-                                        [
-                                            'title' => 'Template Wedding Invitation 2',
-                                            'url' => 'temp/template-wedding-2',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan klasik dan romantis. Desain ini menampilkan ornamen bunga dan detail vintage, sempurna untuk pesta pernikahan yang anggun dan berkesan.'
-                                        ],
-                                        [
-                                            'title' => 'Template Wedding Invitation 3',
-                                            'url' => 'temp/template-wedding-3',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Ciptakan undangan pernikahan yang hangat dan alami dengan template rustic ini. Dengan elemen kayu dan daun hijau, undangan Anda akan memancarkan pesona alam yang menawan.'
-                                        ],
-                                        [
-                                            'title' => 'Template Wedding Invitation 4',
-                                            'url' => 'temp/template-wedding-4',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Undangan pernikahan dengan desain glamor dan berkilau. Dihiasi dengan glitter dan elemen emas, template ini akan membuat undangan Anda tampak mewah dan memukau.'
-                                        ],
-                                        [
-                                            'title' => 'Template Wedding Invitation 5',
-                                            'url' => 'temp/template-wedding-5',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Undangan pernikahan dengan desain modern dan artistik. Dengan penggunaan warna-warna cerah dan pola geometris, template ini cocok untuk pasangan yang ingin tampil beda dan kreatif.'
-                                        ],
-                                        [
-                                            'title' => 'Template Wedding Invitation 6',
-                                            'url' => 'temp/template-wedding-6',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan gaya tradisional yang elegan. Menampilkan motif batik dan warna-warna klasik, cocok untuk pernikahan dengan tema budaya yang kuat.'
-                                        ],
-                                        [
-                                            'title' => 'Template weddings Invitation 7',
-                                            'url' => 'temp/template-wedding-7',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
-                                        ],
-                                        [
-                                            'title' => 'Template weddings Invitation 8',
-                                            'url' => 'temp/template-wedding-8',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
-                                        ],
-                                        [
-                                            'title' => 'Template weddings Invitation 9',
-                                            'url' => 'temp/template-wedding-9',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
-                                        ],
-                                        [
-                                            'title' => 'Template weddings Invitation 10',
-                                            'url' => 'temp/template-wedding-10',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
-                                        ],
-                                        [
-                                            'title' => 'Template weddings Invitation 11',
-                                            'url' => 'temp/template-wedding-11',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
-                                        ],
-                                        [
-                                            'title' => 'Template weddings Invitation 12',
-                                            'url' => 'temp/template-wedding-12',
-                                            'img' => 'app-assets/images/illustration/personalization.svg',
-                                            'deskripsi' => 'Template undangan pernikahan dengan sentuhan vintage dan klasik. Desain ini cocok untuk pesta pernikahan yang anggun dan klasik.'
-                                        ]
-                                    ];
-                                @endphp
-                                @foreach ($arrTemplate as $item)
+                                @foreach ($templateUndangan as $item)
                                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                                         <div class="card">
                                             <a href="javascript:void(0)">
-                                                <img src="{{ url($item['img']) }}" class="card-img-top" alt="knowledge-base-image" />
-                                                {{-- <img src="https://source.unsplash.com/random/1080x720?{{ url($item['img']) }}" class="card-img-top" alt="knowledge-base-image" /> --}}
+                                                <img src="{{ url($item->image ? '/assets/template-undangan/'.$item->image : '/app-assets/images/illustration/personalization.svg') }}" class="card-img-top" alt="knowledge-base-image" />
                                                 <div class="card-body text-center">
-                                                    <h4><a href="{{ url($item['url']) }}">{{ $item['title'] }}</a></h4>
+                                                    <h4><a href="{{ url('/temp/'.$item->url) }}">{{ $item->title }}</a></h4>
                                                     <p class="text-body mt-1 mb-0">
-                                                        {{ $item['deskripsi'] }}
+                                                        {{ $item->deskripsi }}
                                                     </p>
                                                 </div>
                                             </a>

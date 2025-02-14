@@ -43,7 +43,7 @@
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="Produk">Produk</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center {{ request()->segment(1) == 'template-message' ? 'active' : '' }}" href="{{ url('/template-message') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Template Message">Template Message</span></a></li>
-                        <li><a class="d-flex align-items-center {{ request()->segment(1) == 'list-produk' ? 'active' : '' }}" href="{{ url('/list-produk') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List Produk">List Produk</span></a></li>
+                        <li><a class="d-flex align-items-center {{ request()->segment(1) == 'template-undangan' ? 'active' : '' }}" href="{{ url('/template-undangan') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Template Undangan">Template Undangan</span></a></li>
                     </ul>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">User</span></a>
